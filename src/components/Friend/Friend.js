@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Friend = (props) => {
+    
     const {name, email} = props.friend
     return (
         <div>

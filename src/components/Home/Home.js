@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import Friend from '../Frined/Friend';
-;
+import Friend from '../Friend/Friend';
 
 const Home = () => {
     const [friends, setFriends]= useState([]);

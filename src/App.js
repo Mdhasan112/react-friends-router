@@ -3,25 +3,24 @@ import {
   Route,
   Router,
   Switch,
-  Link,
 } from "react-router-dom";
 import Home from './components/Home/Home';
 
 function App() {
   
   return (
-    <>
+    
       <Router>
         <Switch>
-          <Route path="/">
-            <Home />
+          <Route exact path="/home">
+            <Home></Home>
           </Route>
-          <Route exact path= "/home">
-            <Home />
+          <Route exact path="/">
+            <Home></Home>
           </Route>
         </Switch>
       </Router>
-    </>
+
   );
 }
 
