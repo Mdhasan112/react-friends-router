@@ -5,6 +5,7 @@ import {
   Switch,
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import NoMatch from './components/NoMatch/NoMatch';
 
 function App() {
   
@@ -12,11 +13,14 @@ function App() {
     
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
         <Route exact path="/home">
           <Home></Home>
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="*">
+          <NoMatch />
         </Route>
       </Switch>
     </BrowserRouter>
